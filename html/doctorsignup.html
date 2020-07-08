@@ -1,0 +1,470 @@
+<html lang="en-US">
+<head>
+<title>SIVIKA- </title>
+<link href="..\css\doctorsignup.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+</style>
+</head>
+<body>
+<nav>
+
+	<div class="admin">
+<div class="adminbuttons" style="margin-top:4px">
+<div class="dropdown">
+  <button class="dropbtn" style="padding-right:40px;">Doctor</button>
+  <div class="dropdown-content">
+    <a href="..\html\doctor_login.html">Doctor Log-in</a>
+    <a href="..\html\doctorsignup.html">Doctor Sign-Up</a>
+  </div>
+</div>	
+</div>
+<div class="adminbuttons" style="margin-top:4px"><a href="#"><div class="dropdown">
+  <button class="dropbtn">Customer</button>
+  <div class="dropdown-content">
+    <a href="..\html\customer_login.html">Customer Log-in</a>
+    <a href="..\html\customer_signup.html">Customer Sign-Up</a>
+  </div>
+</div>	 </div>
+<div class="adminbuttons" style="margin-top:4px"><a href="#"><div class="dropdown">
+  <button class="dropbtn">Pharmacy</button>
+  <div class="dropdown-content">
+    <a href="..\html\pharma.html">Pharmacy Log-in</a>
+    <a href="..\html\pharma_signup.html">Pharmacy Sign-Up</a>
+	<a href="..\php\addmed.php">Add Medicines</a>
+  </div>
+</div>	 </div>
+
+	<div class="adminbuttons" style="margin-top:4px">
+<div class="dropdown">
+  <button class="dropbtn" style="padding-right:40px;"><a href="..\html\adminlogin.html">Admin</a></button>
+ 
+</div>	
+</div>
+		<div class="adminbuttons" style="margin-top:1px"> <div id="google_translate_element"> </div> </div>
+	</div>
+<div class="webname">
+<div class="websitename">SIVIKA.CO</div>
+<div class="menu">
+  <ol>
+    <li class="menu-item"><a href="..\html\newweb.html">About</a></li>
+    <li class="menu-item"><a href="..\php\customer_docview.php">Appoint</a></li>
+    <li class="menu-item"><a href="..\php\order3.php">Order</a>
+      <ol class="sub-menu">
+        
+      </ol>
+    </li>
+	
+   <li class="menu-item"><a href="..\html\compare.html">Compare</a></li>
+
+    <li class="menu-item"><a href="">NGO</a>
+      <ol class="sub-menu">
+        <li class="menu-item"><a href="..\education\LIST_EDUCATIONAL_NGO.html">Education</a></li>
+        <li class="menu-item"><a href="..\healthcare\LIST_HEALTHCARE_NGO.html">Healthcare</a></li>
+      </ol>
+    </li>
+<li class="menu-item"><a href="#0">Info</a>
+      <ol class="sub-menu">
+        <li class="menu-item"><a href="..\homeremedies\LIST_HOMEREMEDIES.html">Home Remedies</a></li>
+        <li class="menu-item"><a href="..\disease\LIST_DISEASES.html">Disease Information</a></li>
+      </ol>
+    </li>
+    <li class="menu-item"><a href="..\html\sitemap.html">Sitemap</a></li>
+  </ol>
+</div>
+</div>
+</nav>
+<div id="mainbody">
+<script>
+function validatename()
+  {
+   var name = document.doc.d_name.value;
+   var letters = /^[A-Za-z]+$/;
+   if(name.match(letters))
+     {
+      return true;
+     }
+   else
+     {
+     alert("please enter a valid name");
+     return false;
+     }
+  }
+  unction validatecname()
+  {
+   var name = document.doc.d_cname.value;
+   var letters = /^[A-Za-z]+$/;
+   if(name.match(letters))
+     {
+      return true;
+     }
+   else
+     {
+     alert("please enter a valid name");
+     return false;
+     }
+  }
+  function validatecity()
+  {
+   var name = document.doc.d_city.value;
+   var letters = /^[A-Za-z]+$/;
+   if(name.match(letters))
+     {
+      return true;
+     }
+   else
+     {
+     alert("please enter a valid value");
+     return false;
+     }
+  }
+  function validateccity()
+  {
+   var name = document.doc.d_ccity.value;
+   var letters = /^[A-Za-z]+$/;
+   if(name.match(letters))
+     {
+      return true;
+     }
+   else
+     {
+     alert("please enter a valid value");
+     return false;
+     }
+  }
+  function validatespe()
+  {
+   var name = document.doc.d_spe.value;
+   var letters = /^[A-Za-z]+$/;
+   if(name.match(letters))
+     {
+      return true;
+     }
+   else
+     {
+     alert("please enter a valid value");
+     return false;
+     }
+  }
+  function validatecollege()
+  {
+   var name = document.doc.d_college.value;
+   var letters = /^[A-Za-z]+$/;
+   if(name.match(letters))
+     {
+      return true;
+     }
+   else
+     {
+     alert("please enter a valid value");
+     return false;
+     }
+  }
+  function validatenum(){
+
+  var z = document.doc.d_yearcom.value;
+
+  if(!/^[0-9]+$/.test(z)){
+    alert("Please only enter numeric values")
+  }
+
+}
+ function validatefee(){
+
+  var z = document.doc.d_fee.value;
+
+  if(!/^[0-9]+$/.test(z)){
+    alert("Please only enter numeric values")
+  }
+
+}
+ function validateryear(){
+
+  var z = document.doc.d_ryear.value;
+
+  if(!/^[0-9]+$/.test(z)){
+    alert("Please only enter numeric values")
+  }
+
+}
+ function validateyearexp(){
+
+  var z = document.doc.d_yearexp.value;
+
+  if(!/^[0-9]+$/.test(z)){
+    alert("Please only enter numeric values")
+  }
+
+}
+
+  function validatecontact()
+  {
+   var contact = document.doc.d_phone.value;
+if(!/^[0-9]+$/.test(contact)){
+    alert("Please only enter numeric values")
+  }
+
+  }
+  
+ function validateemail()
+  {
+   var email = document.doc.d_email.value;
+   var letters = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+   if(email.match(letters))
+     {
+      return true;
+     }
+   else
+     {
+     alert("please enter a valid email");
+     return false;
+     }
+  }
+</script>
+
+<center><table style="margin-left:250px"> <form name=doc action="..\php\doctorsignup.php" method="post" enctype='multipart/form-data'>
+						<th style="font-size:35px;margin-left:250px;color:black">Doctor Sign-up</th>
+						
+					<tr>
+							<td style="font-size:18px;color:black">About </td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">Name :</td>
+							<td style="font-size:18px;color:black"><input type="text" name="d_name" Placeholder="Name" required onchange=validatename() style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">Gender:</td>
+							<td style="font-size:15px;color:black"><input type="radio" name="d_gender" value= "male"> male &nbsp;<input type="radio" name="d_gender" value= "female"> female &nbsp; <input type="radio" name="d_gender" value="others"> others &nbsp;</td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">Speciality:</td>
+							<td style="font-size:18px;color:black"><input type="text" name="d_spe" required placeholder="Speciality" onchange=validatespe() maxlength="20" style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						<tr>
+						  <td style="font-size:18px;color:black">Profile pic</td>
+						  <td style="font-size:15px;color:black">Select a file: <input type="file" required  name="d_propic"><br><br></td>
+
+						<tr >
+						<tr>
+							<td style="font-size:18px;color:black">City:</td>
+							<td style="font-size:15px"><input type="text" name="d_city" placeholder="City" required onchange=validatecity() maxlength="15" style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">Phone:</td>
+							<td style="font-size:15px"><input type="text" name="d_phone" placeholder="Phone" required   maxlength="10" onchange=validatecontact() style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">Email:</td>
+							<td style="font-size:15px"><input type="text" name="d_email" placeholder="Email" required onchange=validateemail() style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">Password:</td>
+							<td style="font-size:15px"><input type="password" name="d_password" placeholder="Password" required style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						
+							<tr>
+							<td style="font-size:18px;color:black">	Education and Work experience:
+ </td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">Degree:</td>
+							<td style="font-size:15px"><input type="text" name="d_degree" placeholder="Degree" required maxlength="15" style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">College:</td>
+							<td style="font-size:15px"><input type="text" name="d_college" placeholder="College"  onchange=validatecollege() required maxlength="25" style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">Year of completion:</td>
+							<td style="font-size:15px"><input type="text" name="d_yearcom" placeholder="YYYY" onchange=validatenum() maxlength="4" required style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						
+						<tr>
+							<td style="font-size:18px;color:black">Years of Experience:</td>
+							<td style="font-size:15px"><input type="text" name="d_yearexp" onchange=validateyearexp() required placeholder="years" maxlength="2" style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						<tr >
+						
+					    <tr>
+							<td style="font-size:18px;color:black">	Registration: </td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">Registration Number:</td>
+							<td style="font-size:15px"><input type="text" name="d_rnu" required placeholder="Registration No." maxlength="10" style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">Registered Council:</td>
+							<td style="font-size:15px"><input type="text" name="d_rcou"  required placeholder="eg.Gujrat Medical Council" maxlength="25" style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">Registration Year</td>
+							<td style="font-size:15px"><input type="text" name="d_ryear" onchange=validateryear() required placeholder="YYYY" maxlength="4" style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">	Clinic Info: </td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">Clinic Name:</td>
+							<td style="font-size:15px"><input type="text" name="d_cname"  onchange=validatecname() required placeholder="Name" maxlength="15" style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">Clinic Address:</td>
+							<td style="font-size:15px"><input type="text" name="d_cad" required placeholder="Address" maxlength="15" style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">City:</td>
+							<td style="font-size:15px"><input type="text" name="d_ccity" required onchange=validateccity() placeholder="City" maxlength="15" style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">Clinic Registration number:</td>
+							<td style="font-size:15px"><input type="text" name="d_cregnum"  required placeholder="Registration Number" maxlength="15" style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						
+						<tr>
+							<td style="font-size:18px;color:black">ID </td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">ID Proof</td>
+							<td style="font-size:15px"><input type="radio" name="d_idproof" required value= "Adhaar"> Adhaar &nbsp;<input type="radio" name="d_idproof" value= "DrivLisc"> Driving Liscence &nbsp; <input type="radio" name="d_idproof" value="vid"> Voter Id &nbsp;<input type="radio" name="d_idproof" value= "pasid"> Passport No. &nbsp;</td>
+						</tr>
+						<tr>
+						  <td></td>
+						  <td style="font-size:15px;color:black">Select a file: <input type="file" required name="d_proofpic"><br><br></td>
+
+						<tr >
+						<td style="font-size:18px;color:black">Availbility </td>
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">Days</td>
+							<td style="font-size:15px"><input type="radio" name="d_ava" value= "Mon toFri"> Mon to Fri &nbsp;<input type="radio" name="d_ava" value= "Mon to Sat"> Mon to Sat &nbsp; <input type="radio" name="d_ava" value="Mon to Sun"> Mon to Sun &nbsp;</td>
+							
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">Time</td>
+							<td style="font-size:15px"><input type="radio" name="d_time" value= "tentotwo"> 10:00 to 2:00 &nbsp;<input type="radio" name="d_time" value= "fivetoeight"> 5:00 to 8:00 &nbsp; <input type="radio" name="d_time" value="tentoeight"> 10:00 to 8:00 &nbsp;</td>
+							
+						</tr>
+						<tr>
+							<td style="font-size:18px;color:black">Fee:</td>
+							<td style="font-size:15px"><input type="text" name="d_fee" required placeholder="fee"  onchange=validatefee() maxlength="4" style="height:40px; width:300px; border:none; border-bottom: 2px solid grey; background-color:#f5f5f5;"></td>
+						</tr>
+						<tr >
+							<td colspan=2><br><br>
+								
+								<input type="submit" name='sign' value="SIGN-UP" style="font-family:Verdana, sans-serif;font-weight:bold;font-size:14 pt;color:black;background-color:white;border:2px solid black;padding:3px;height:50px;width:100px;margin-left:250px">
+								</td>
+						</tr>
+					</form>
+				</table></center>			
+								</div>
+								<br><br>
+							
+</nav>
+<div class="footer">
+<br><br>
+<br>
+  <p><table>
+  <tr>
+    <td ><a href="..\html\newweb.html">Home</a></td>
+   <td><a href="..\html\map.html">Store Locator</a><br></td>
+	<td><a href="..\html\doctorsignup.html">Are you a Doctor? Join Us</a><br></td>
+	<td><a href="..\disease\LIST_DISEASES.html">Disease Information</a></td>
+	
+  </tr>
+  <tr>
+    <td><a href="..\html\customer_sign.html">Sign-up</a><br></td>
+	<td><a href="..\html\pharma_signup.html">Are you a Pharmacist?</a><br></td>
+	<td><a href="..\html\customer_login.html">Already a user? Log-in.</a><br></td>
+	<td><a href="..\homeremedies\LIST_HOMEREMEDIES.html">Home Remedies</a><br></td>
+
+	
+</tr>
+  <tr>
+    <td><a href="..\html\newweb.html">About us</a><br></td>
+	<td><a href="https://snatchbot.me/webchat?botID=46836&appID=B45P5NaH1zswBpoPPNHE">Chat</a><br></td>
+	<td><a href="..\php\order3.php">Want medicines? Order</a><br></td>
+		<td><a href="..\healthcare\LIST_HEALTHCARE_NGO.html">Healthcare(NGO)</a></td>
+
+	</tr>
+	<tr>
+	<td><a href="..\html\sitemap.html">Site-Map</a></td>
+	<td><a href="..\php\index1.php">Customer Review</a></td>
+	<td><a href="..\html\compare.html">Don't know which is best? Compare</a></td>
+	<td><a href="..\education\LIST_EDUCATIONAL_NGO.html">Education(NGO)</a></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	</tr>
+	
+</table><br></p>
+				<div class="footer-social-icons">
+    <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+    </ul>
+	<br>
+	
+</div>
+</div>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en',  layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="f.js"></script>
+
+<script> 
+function getSelectionText() {
+    var text = "";
+    if (window.getSelection) {
+        text = window.getSelection().toString();
+    // for Internet Explorer 8 and below. For Blogger, you should use &amp;&amp; instead of &&.
+    } else if (document.selection && document.selection.type != "Control") { 
+        text = document.selection.createRange().text;
+    }
+    return text;
+}
+$(document).ready(function (){ // when the document has completed loading
+   $(document).mouseup(function (e){ // attach the mouseup event for all div and pre tags
+      setTimeout(function() { // When clicking on a highlighted area, the value stays highlighted until after the mouseup event, and would therefore stil be captured by getSelection. This micro-timeout solves the issue. 
+         responsiveVoice.cancel(); // stop anything currently being spoken
+         responsiveVoice.speak(getSelectionText()); //speak the text as returned by getSelectionText
+      }, 1);
+   });
+});
+</script>
+<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<script> 
+function getSelectionText() {
+    var text = "";
+    if (window.getSelection) {
+        text = window.getSelection().toString();
+    // for Internet Explorer 8 and below. For Blogger, you should use &amp;&amp; instead of &&.
+    } else if (document.selection && document.selection.type != "Control") { 
+        text = document.selection.createRange().text;
+    }
+    return text;
+}
+$(document).ready(function (){ // when the document has completed loading
+   $(document).mouseup(function (e){ // attach the mouseup event for all div and pre tags
+      setTimeout(function() { // When clicking on a highlighted area, the value stays highlighted until after the mouseup event, and would therefore stil be captured by getSelection. This micro-timeout solves the issue. 
+         responsiveVoice.cancel(); // stop anything currently being spoken
+         responsiveVoice.speak(getSelectionText()); //speak the text as returned by getSelectionText
+      }, 1);
+   });
+});
+</script>
+</body>
+
+</html>

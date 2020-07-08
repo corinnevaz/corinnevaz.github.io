@@ -1,0 +1,175 @@
+<html lang="en-US">
+<head>
+<title>SIVIKA MEDICAL WEBSITE FOR THE UNDERPREVILIGED </title>
+<link href="content.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+</style>
+</head>
+<body>
+<nav>
+
+	<div class="admin">
+<div class="adminbuttons" style="margin-top:4px">
+<div class="dropdown">
+  <button class="dropbtn" style="padding-right:40px;">Doctor</button>
+  <div class="dropdown-content">
+    <a href="doctorlogin.html">Doctor Log-in</a>
+    <a href="doctorsignup.html">Doctor Sign-Up</a>
+  </div>
+</div>	
+</div>
+<div class="adminbuttons" style="margin-top:4px"><a href="form1.html"><div class="dropdown">
+  <button class="dropbtn">Customer</button>
+  <div class="dropdown-content">
+    <a href="customerlogin.html">Customer Log-in</a>
+    <a href="customersignup.html">Customer Sign-Up</a>
+  </div>
+</div>	 </div>
+
+		<div class="adminbuttons" style="margin-top:1px"> <div id="google_translate_element"> </div> </div>
+	</div>
+<div class="webname">
+<div class="websitename">SIVIKA.CO</div>
+<div class="menu">
+  <ol>
+    <li class="menu-item"><a href="newweb.html">About</a></li>
+    <li class="menu-item"><a href="appoint.html">Appoint</a></li>
+    <li class="menu-item"><a href="order.html">Order</a>
+      <ol class="sub-menu">
+        <li class="menu-item"><a href="allome.html">Allopethic Medicine</a></li>
+        <li class="menu-item"><a href="homeo.html">Homeopathic Medicine</a></li>
+        <li class="menu-item"><a href="ayurveda.html">Ayurveda</a></li>
+      </ol>
+    </li>
+	
+   <li class="menu-item"><a href="compare.html">Compare</a></li>
+
+    <li class="menu-item"><a href="ngo.html">NGO</a>
+      <ol class="sub-menu">
+        <li class="menu-item"><a href="edu.html">Education</a></li>
+        <li class="menu-item"><a href="healthcare.html">Healthcare</a></li>
+      </ol>
+    </li>
+<li class="menu-item"><a href="#0">Info</a>
+      <ol class="sub-menu">
+        <li class="menu-item"><a href="homere.html">Home Remedies</a></li>
+        <li class="menu-item"><a href="diseaseinfo.html">Disease Information</a></li>
+      </ol>
+    </li>
+    <li class="menu-item"><a href="sitemap.html">Sitemap</a></li>
+  </ol>
+</div>
+</div>
+</nav>
+<div class="content">
+jgj
+</div>
+<div class="footer">
+<br><br>
+<br>
+  <p><table>
+  <tr>
+    <td ><a href="front.html">Home</a></td>
+    <td><a href="developers.html">Developers</a><br></td>
+	<td><a href="doctorsignup.html">Are you a Doctor? Join Us</a><br></td>
+	<td><a href="diseaseinfo.html">Disease Information</a></td>
+	
+  </tr>
+  <tr>
+    <td><a href="contact.html">Contact us</a><br></td>
+	<td><a href="privacypolicy.html">Privacy Policy</a><br></td>
+	<td><a href="customerlogin.html">Already a user? Log-in.</a><br></td>
+	<td><a href="homere.html">Home Remedies</a><br></td>
+
+	
+</tr>
+  <tr>
+    <td><a href="newweb.html">About us</a><br></td>
+	<td><a href="termscondition">Terms and conditions</a><br></td>
+	<td><a href="order.html">Want medicines? Order</a><br></td>
+		<td><a href="healthcare.html">Healthcare(NGO)</a></td>
+
+	</tr>
+	<tr>
+	<td><a href="sitemap.html">Site-Map</a></td>
+	<td></td>
+	<td><a href="Compare.html"></a>Don't know which is best? Compare</td>
+	<td><a href="edu.html">Education(NGO)</a></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><a href="healthcare.html">Healthcare(NGO)</a></td>
+	</tr>
+	
+</table><br></p>
+				<div class="footer-social-icons">
+    <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+    </ul>
+	<br>
+	
+</div>
+</div>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en',  layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="f.js"></script>
+
+<script> 
+function getSelectionText() {
+    var text = "";
+    if (window.getSelection) {
+        text = window.getSelection().toString();
+    // for Internet Explorer 8 and below. For Blogger, you should use &amp;&amp; instead of &&.
+    } else if (document.selection && document.selection.type != "Control") { 
+        text = document.selection.createRange().text;
+    }
+    return text;
+}
+$(document).ready(function (){ // when the document has completed loading
+   $(document).mouseup(function (e){ // attach the mouseup event for all div and pre tags
+      setTimeout(function() { // When clicking on a highlighted area, the value stays highlighted until after the mouseup event, and would therefore stil be captured by getSelection. This micro-timeout solves the issue. 
+         responsiveVoice.cancel(); // stop anything currently being spoken
+         responsiveVoice.speak(getSelectionText()); //speak the text as returned by getSelectionText
+      }, 1);
+   });
+});
+</script>
+<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<script> 
+function getSelectionText() {
+    var text = "";
+    if (window.getSelection) {
+        text = window.getSelection().toString();
+    // for Internet Explorer 8 and below. For Blogger, you should use &amp;&amp; instead of &&.
+    } else if (document.selection && document.selection.type != "Control") { 
+        text = document.selection.createRange().text;
+    }
+    return text;
+}
+$(document).ready(function (){ // when the document has completed loading
+   $(document).mouseup(function (e){ // attach the mouseup event for all div and pre tags
+      setTimeout(function() { // When clicking on a highlighted area, the value stays highlighted until after the mouseup event, and would therefore stil be captured by getSelection. This micro-timeout solves the issue. 
+         responsiveVoice.cancel(); // stop anything currently being spoken
+         responsiveVoice.speak(getSelectionText()); //speak the text as returned by getSelectionText
+      }, 1);
+   });
+});
+</script>
+</body>
+
+</html>
